@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!--
+/**
+ *
+ * @category   Inovarti
+ * @package    Inovarti_GoogleRemarketing
+ * @author     Suporte <suporte@inovarti.com.br>
+ */
+-->
+<config>
+    <modules>
+        <Inovarti_GoogleRemarketing>
+            <version>0.1.0</version>
+        </Inovarti_GoogleRemarketing>
+    </modules>
+
+    <global>
+        <blocks>
+            <inovarti_googleremarketing>
+                <class>Inovarti_GoogleRemarketing_Block</class>
+            </inovarti_googleremarketing>
+        </blocks>
+        <helpers>
+            <inovarti_googleremarketing>
+                <class>Inovarti_GoogleRemarketing_Helper</class>
+            </inovarti_googleremarketing>
+        </helpers>
+    </global>
+
+    <frontend>
+        <layout>
+            <updates>
+                <inovarti_globalmessage>
+                    <file>inovarti/googleremarketing.xml</file>
+                </inovarti_globalmessage>
+            </updates>
+        </layout>
+    </frontend>
+
+    <default>
+        <inovarti_googleremarketing>
+            <googleremarketing>
+                <enabled>0</enabled>
+                <google_conversion_id></google_conversion_id>
+                <google_conversion_label></google_conversion_label>
+            </googleremarketing>
+        </inovarti_googleremarketing>
+    </default>
+</config>

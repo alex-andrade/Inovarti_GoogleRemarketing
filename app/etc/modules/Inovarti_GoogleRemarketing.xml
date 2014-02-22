@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ /**
+ *
+ * @category   Inovarti
+ * @package    Inovarti_GoogleRemarketing
+ * @author     Suporte <suporte@inovarti.com.br>
+ */
+-->
+<config>
+    <modules>
+        <Inovarti_GoogleRemarketing>
+            <codePool>local</codePool>
+            <active>true</active>
+        </Inovarti_GoogleRemarketing>
+    </modules>
+</config>

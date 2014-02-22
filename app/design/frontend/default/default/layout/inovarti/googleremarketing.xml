@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ *
+ * @category   Inovarti
+ * @package    Inovarti_GoogleRemarketing
+ * @author     Suporte <suporte@inovarti.com.br>
+ */
+-->
+<layout version="0.1.0">
+    <default>
+        <reference name="before_body_end">
+            <block type="inovarti_googleremarketing/block" name="inovarti.googleremarketing" />
+        </reference>
+    </default>
+</layout>
