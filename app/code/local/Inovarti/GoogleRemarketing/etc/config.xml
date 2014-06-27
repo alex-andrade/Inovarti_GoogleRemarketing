@@ -42,7 +42,6 @@
             <googleremarketing>
                 <enabled>0</enabled>
                 <google_conversion_id></google_conversion_id>
-                <google_conversion_label></google_conversion_label>
             </googleremarketing>
         </inovarti_googleremarketing>
     </default>

@@ -10,7 +10,6 @@ class Inovarti_GoogleRemarketing_Block_Block extends Mage_Core_Block_Abstract {
     public function __construct() {
         parent::__construct();
         $this->setGoogleConversionId(Mage::getStoreConfig('inovarti_googleremarketing/googleremarketing/google_conversion_id'));
-        $this->setGoogleConversionLabel(Mage::getStoreConfig('inovarti_googleremarketing/googleremarketing/google_conversion_label'));
     }
 
     protected function _toHtml() {
@@ -63,13 +62,12 @@ class Inovarti_GoogleRemarketing_Block_Block extends Mage_Core_Block_Abstract {
                     <script type=text/javascript>
                     /* <![CDATA[ */
                     var google_conversion_id = ".$_conversionId.";
-                    var google_conversion_label = '".$this->getGoogleConversionLabel()."';
                     var google_custom_params = window.google_tag_params;
                     var google_remarketing_only = true;
                     /* ]]> */
                     </script>
                     <script type=\"text/javascript\" src=\"//www.googleadservices.com/pagead/conversion.js\"></script>
-                    <noscript><div style=\"display:inline;\"><img height=\"1\" width=\"1\" style=\"border-style:none;\" alt=\"googleads\" src=\"//googleads.g.doubleclick.net/pagead/viewthroughconversion/".$_conversionId."/?value=0&amp;label=".$this->getGoogleConversionLabel()."&amp;guid=ON&amp;script=0\"/></div></noscript>";
+                    <noscript><div style=\"display:inline;\"><img height=\"1\" width=\"1\" style=\"border-style:none;\" alt=\"googleads\" src=\"//googleads.g.doubleclick.net/pagead/viewthroughconversion/".$_conversionId."/?value=0&amp;guid=ON&amp;script=0\"/></div></noscript>";
         }
         return $html;
     }
